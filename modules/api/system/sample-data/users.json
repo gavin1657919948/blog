@@ -1,44 +1,20 @@
 {
   "SystemUser": [
     {
+      "id": "user1",
+      "email": "user@example.com",
+      "firstName": "高",
+      "lastName": "炜",
+      "avatar": "https://avatars0.githubusercontent.com/u/39034?s=400&v=4",
+      "password": "123"
+    },
+    {
       "id": "admin",
       "email": "admin@example.com",
-      "firstName": "吴",
-      "lastName": "小峰",
-      "avatar": "https://avatars2.githubusercontent.com/u/1409983?s=400&v=4",
-      "password": "password"
-    },
-    {
-      "id": "manager",
-      "email": "manager@example.com",
-      "firstName": "曾",
-      "lastName": "小臣",
-      "avatar": "https://avatars0.githubusercontent.com/u/39034?s=400&v=4",
-      "password": "password"
-    },
-    {
-      "id": "user",
-      "email": "user@example.com",
       "firstName": "王",
-      "lastName": "小俊",
+      "lastName": "广俊",
       "avatar": "https://avatars0.githubusercontent.com/u/13700?s=400&v=4",
-      "password": "password"
-    },
-    {
-      "id": "installer1",
-      "email": "installer@example.com",
-      "firstName": "计",
-      "lastName": "小佳",
-      "avatar": "https://avatars1.githubusercontent.com/u/703628?s=400&v=4",
-      "password": "password"
-    },
-    {
-      "id": "maintainer1",
-      "email": "maintainer@example.com",
-      "firstName": "高",
-      "lastName": "小玮",
-      "avatar": "https://avatars1.githubusercontent.com/u/4248851?s=400&v=4",
-      "password": "password"
+      "password": "123"
     }
   ]
 }

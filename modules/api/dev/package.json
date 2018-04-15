@@ -13,9 +13,21 @@
       "models": {
         "Dev": {
           "dataSource": "db"
+        },
+        "BlogContent": {
+          "dataSource": "db",
+          "public": true
+        },
+        "BlogInfo": {
+          "dataSource": "db",
+          "public": true
         }
       },
-      "sampleData": ["sample-data/sample-data.json"]
+      "sampleData": [
+        "sample-data/sample-data.json",
+        "sample-data/sample-blogContent.json",
+        "sample-data/sample-blogInfo.json"
+      ]
     }
   }
 }

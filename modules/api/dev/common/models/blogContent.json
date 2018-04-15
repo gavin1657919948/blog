@@ -1,0 +1,32 @@
+{
+  "name": "BlogContent",
+  "plural": "BlogContents",
+  "description": "Blog Content data",
+  "base": "PersistedModel",
+  "componentPackage": "@wushuu/module-api-dev/common/models/blogContent/",
+  "idInjection": true,
+  "forceId": false,
+  "mixins": {
+    "TimeStamp": {
+      "createdAt": "created",
+      "updatedAt": "modified",
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "defaultFn": "uuidv4"
+    },
+    "content": {
+      "type": "String"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": []
+}

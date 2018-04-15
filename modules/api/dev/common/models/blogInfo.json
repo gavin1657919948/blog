@@ -1,0 +1,44 @@
+{
+  "name": "BlogInfo",
+  "plural": "BlogInfos",
+  "description": "Blog Info data",
+  "base": "PersistedModel",
+  "componentPackage": "@wushuu/module-api-dev/common/models/blogInfo/",
+  "idInjection": true,
+  "forceId": false,
+  "mixins": {
+    "TimeStamp": {
+      "createdAt": "created",
+      "updatedAt": "modified",
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "defaultFn": "uuidv4"
+    },
+    "title": {
+      "type": "String"
+    },
+    "abstract": {
+      "type": "String"
+    },
+    "viewCount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "systemUser": {
+      "type": "belongsTo",
+      "model": "SystemUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": []
+}

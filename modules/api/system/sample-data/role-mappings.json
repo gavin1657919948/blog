@@ -11,23 +11,8 @@
       "principalType": "USER"
     },
     {
-      "roleId": "manager",
-      "principalId": "manager",
-      "principalType": "USER"
-    },
-    {
-      "roleId": "staff",
-      "principalId": "user",
-      "principalType": "USER"
-    },
-    {
-      "roleId": "staff",
-      "principalId": "installer1",
-      "principalType": "USER"
-    },
-    {
-      "roleId": "maintainer",
-      "principalId": "maintainer1",
+      "roleId": "user",
+      "principalId": "user1",
       "principalType": "USER"
     }
   ]
