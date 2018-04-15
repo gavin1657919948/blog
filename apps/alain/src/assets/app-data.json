@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "华天世纪",
+    "description": "智慧用电安全云平台"
+  },
+  "user": {
+    "name": "Admin",
+    "avatar": "./assets/img/zorro.svg",
+    "email": "ht-cloud@qq.com"
+  },
+  "menu": [
+    {
+      "text": "主操作",
+      "translate": "main_navigation",
+      "group": true,
+      "children": [
+        {
+          "text": "驾驶舱",
+          "link": "/dashboard/v1",
+          "icon": "fa fa-tachometer"
+        },
+        {
+          "text": "探测器管理",
+          "link": "/sensors",
+          "icon": "fa fa-microchip",
+          "acl": "role-b"
+        },
+        {
+          "text": "主机管理",
+          "link": "/hosts",
+          "icon": "fa fa-server",
+          "acl": "role-b"
+        },
+        {
+          "text": "用户管理",
+          "link": "/users",
+          "icon": "fa fa-users",
+          "acl": "role-b"
+        },
+        {
+          "text": "地图展示",
+          "link": "/map/display",
+          "icon": "fa fa-map",
+          "acl": "role-b"
+        },
+        {
+          "text": "报警消息",
+          "link": "/tablesssa",
+          "icon": "fa fa-fire",
+          "acl": "role-b"
+        }
+      ]
+    }
+  ]
+}

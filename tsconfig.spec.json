@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es5",
+    "types": ["jasmine", "node"],
+    "paths": {
+      "@shared": ["apps/alain/src/app/shared"],
+      "@shared/*": ["apps/alain/src/app/shared/*"],
+      "@alain/*": ["apps/alian/libs/*"]
+    }
+  },
+  "files": ["test.js"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"],
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,7 @@
+{
+  "/config.js": {
+    "target": "http://htcloud.ngcli.com:3000/config.js",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

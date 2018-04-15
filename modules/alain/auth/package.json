@@ -1,0 +1,10 @@
+{
+  "name": "@wushuu/module-alain-auth",
+  "version": "0.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Caster Zeng <caster_zeng@wushuu.com>",
+  "dependencies": {}
+}

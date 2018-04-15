@@ -1,0 +1,24 @@
+{
+  "name": "KPI",
+  "plural": "KPI",
+  "description": "KPI data",
+  "base": "PersistedModel",
+  "componentPackage": "@wushuu/module-api-kpi/common/models/kpi/",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "name": {
+      "type": "String",
+      "required": true
+    },
+    "value": {
+      "type": "string"
+    },
+    "date": {
+      "type": "Date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": []
+}

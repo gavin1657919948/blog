@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - 1025:1025
+      - 8025:8025
+
+  mongodb:
+    image: aashreys/mongo-auth:latest
+    environment:
+      # provide your credentials here
+      - AUTH=yes
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=further&further
+      - MONGODB_APPLICATION_DATABASE=htcloud
+      - MONGODB_APPLICATION_USER=surp
+      - MONGODB_APPLICATION_PASS=woyoadmin
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/configdb
+      - mongo:/data/db
+
+  redis:
+    image: bitnami/redis
+    ports:
+      - "6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis:/bitnami/redis
+
+volumes:
+  mongo:
+    driver: local
+  redis:
+    driver: local

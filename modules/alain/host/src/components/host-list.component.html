@@ -1,0 +1,4 @@
+<pro-header [title]="'主机列表'"></pro-header>
+<nz-card [nzBordered]="false">
+  <ui-data-grid #grid (action)="action($event)" [service]="service"></ui-data-grid>
+</nz-card>

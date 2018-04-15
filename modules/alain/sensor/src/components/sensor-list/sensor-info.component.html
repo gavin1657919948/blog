@@ -1,0 +1,47 @@
+<div class="main">
+    <div class="img">
+        <img src="/assets/img/hosts.jpg" alt="">
+    </div>
+    <div class="info">
+        <p>主机id: {{item.id}}</p>
+        <p>创建时间: {{item.created}}</p>
+        <p>安装人员: {{item.districtId}}</p>
+        <p>具体位置: {{item.locationId}}</p>
+        <p>主机mac地址: {{item.hostId}}</p>
+        <p>维护人员: {{item.provinceId}}</p>
+        <p>模型: {{item.productModelId}}</p>
+        <p>更改时间: {{item.modified}}</p>
+        <p>name: {{item.name}}</p>
+        <p>所属城市: {{item.cityId}}</p>
+        <p>所属城市: {{item.serial_no}}</p>
+    </div>
+</div>
+<div class="channel" *ngFor="let channel of items">
+    <li>通道号: {{channel.no}}</li>
+    <li>通道名称: {{channel.name}}</li>
+    <li>ID: {{channel.sensorId}}</li>
+    <li>单位: {{channel.unit}}</li>
+    <li>阈值: {{channel.threshold}}</li>
+    <li>位置: {{channel.elecLocation}}</li>
+    <li>用电设备: {{channel.elecDevice}}</li>
+    <li>时间: {{channel.modified}}</li>
+</div>
+
+<!-- 
+<nz-table #nzTable [nzAjaxData]="items" nzShowSizeChanger [nzTotal]="totalItems" [(nzPageIndex)]="currentPage" [(nzPageSize)]="limit"
+    [nzLoading]="loading" (nzPageSizeChange)="pageSizeChange()" (nzDataChange)="dataChange($event)" (nzPageIndexChange)="pageChange($event)">
+    <thead nz-thead>
+        <tr>
+            <th nz-th *ngFor="let column of columns">
+                {{column.label}}
+            </th>
+        </tr>
+    </thead>
+    <tbody nz-tbody>
+        <tr nz-tbody-tr *ngFor="let item of nzTable.data">
+            <td nz-td *ngFor="let column of columns">
+                <span>{{item[column.field]}}</span>
+            </td>
+        </tr>
+    </tbody>
+</nz-table> -->

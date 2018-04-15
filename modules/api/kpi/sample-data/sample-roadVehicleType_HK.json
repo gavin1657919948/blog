@@ -1,0 +1,7 @@
+{
+  "RoadVehicleType_HK": [
+    { "id": 1, "name": "私家车" },
+    { "id": 2, "name": "轻型货车" },
+    { "id": 3, "name": "中型和重型货车" }
+  ]
+}

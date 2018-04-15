@@ -1,0 +1,42 @@
+<!-- <button nz-button [nzType]="'primary'" style="margin-bottom: 15px">
+  <a (click)="clickItem($event, 'add')">添加</a>
+</button> -->
+<div *ngIf="config.header">
+  <button type="button" style="margin-bottom: 15px" *ngFor="let button of config.header.buttons" class="{{button.classNames}}"
+    (click)="action.emit({ action: button.action })">
+    <span>{{button.text}}</span>
+  </button>
+</div>
+<nz-table #nzTable [nzAjaxData]="items" nzShowSizeChanger [nzTotal]="totalItems" [(nzPageIndex)]="currentPage" [(nzPageSize)]="limit"
+  [nzLoading]="loading" (nzPageSizeChange)="pageSizeChange()" (nzDataChange)="dataChange($event)" (nzPageIndexChange)="pageChange($event)">
+  <thead nz-thead>
+    <tr>
+      <th nz-th *ngFor="let column of columns">
+        {{column.label}}
+      </th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let item of nzTable.data">
+      <td nz-td *ngFor="let column of columns">
+        <span *ngIf="!column.action">{{item[column.field]}}</span>
+        <span *ngIf="column.action">
+          <a href="#" (click)="clickItem($event, column.action, item)">
+            {{item[column.field]}}
+          </a>
+        </span>
+      </td>
+      <td nz-td>
+        <a (click)="clickItem($event, 'edit', item)">编辑</a>
+        <span nz-table-divider></span>
+        <a (click)="clickItem($event, 'delete', item)">删除</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-modal [nzVisible]="isVisible" [nzTitle]="'确认删除'" [nzContent]="modalContent" (nzOnCancel)="handleCancel($event)" (nzOnOk)="handleOk($event)">
+  <ng-template #modalContent>
+    <p>删除后无法撤回</p>
+  </ng-template>
+</nz-modal>

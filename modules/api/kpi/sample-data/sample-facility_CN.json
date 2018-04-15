@@ -1,0 +1,29 @@
+{
+  "Facility_CN": [
+    {
+      "id": "first",
+      "serialNumber": "first",
+      "fuelTypeId": 1,
+      "fuelDefineId": 1,
+      "facilityTypeId": 1,
+      "power": 1024,
+      "powerUnit": "kw",
+      "efValue": {
+        "nox": 11,
+        "sox": 19,
+        "co": 0.25,
+        "pm2_5": 0.3,
+        "pm10": 1.15,
+        "filterabletpm": 5,
+        "condensiblepm": 0.26
+      },
+      "industryEfvalue": {
+        "ALHV": 19.57,
+        "UHC": 0.026180000000000002,
+        "FCO": 0.93
+      },
+      "systemDomainId": "default",
+      "systemUserId": "admin"
+    }
+  ]
+}

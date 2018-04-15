@@ -1,0 +1,12 @@
+<div class="aside-inner">
+    <nz-dropdown nzTrigger="click" class="user-block clearfix" [routerLink]="['/extras/settings']" style="outline: none">
+        <div nz-dropdown class="user-block-dropdown">
+            <nz-avatar class="avatar" [nzIcon]="'user'" [nzSize]="'large'"></nz-avatar>
+            <div class="info">
+                <strong>{{settings.user.fullName}}</strong>
+                <p class="text-truncate">{{settings.user.email}}</p>
+            </div>
+        </div>
+    </nz-dropdown>
+    <app-layout-nav class="d-block py-lg"></app-layout-nav>
+</div>

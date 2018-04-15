@@ -1,0 +1,28 @@
+{
+  "name": "@colmena/api",
+  "version": "0.2.0",
+  "description": "Colmena API",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io> (https://github.com/beeman) (https://twitter.com/beeman_nl)",
+  "url": "https://github.com/colmena/colmena",
+  "homepage": "https://github.com/colmena/colmena",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colmena/colmena"
+  },
+  "bugs": {
+    "url": "https://github.com/colmena/colmena/issues"
+  },
+  "keywords": ["colmena", "cms", "mobile", "backend", "loopback", "angular", "admin"],
+  "scripts": {
+    "clean": "npx rimraf ./client",
+    "dev": "nodemon",
+    "start": "ts-node .",
+    "test": "true"
+  },
+  "main": "server/server.ts",
+  "dependencies": {}
+}

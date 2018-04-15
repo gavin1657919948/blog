@@ -1,0 +1,23 @@
+{
+  "RoadVehicle_CN": [
+    {
+      "id": "first_RoadVehicle_CN",
+      "serialNumber": "first_RoadVehicle_CN",
+      "licensePlateNo": "鄂Axxxxxxx",
+      "vehicleTypeId": 1,
+      "fuelTypeId": 1,
+      "emissionStandardId": 1,
+      "vehicleWeight": 3000,
+      "systemDomainId": "default",
+      "systemUserId": "admin",
+      "efValue": {
+        "co": 25.72,
+        "hc": 2.685,
+        "nox": 1.971,
+        "pm2_5": 0.028,
+        "pm10": 0.031,
+        "sulphurContent": 10
+      }
+    }
+  ]
+}

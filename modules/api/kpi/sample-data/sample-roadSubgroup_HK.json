@@ -1,0 +1,23 @@
+{
+  "RoadSubgroup_HK": [
+    { "id": 1, "name": "汽油私家车800cc或以下", "roadFuelType_HKId": 1 },
+    { "id": 2, "name": "汽油私家车800cc至1400cc", "roadFuelType_HKId": 1 },
+    { "id": 3, "name": "汽油私家车1400cc至2000cc", "roadFuelType_HKId": 1 },
+    { "id": 4, "name": "汽油私家车2000cc或以上", "roadFuelType_HKId": 1 },
+    { "id": 5, "name": "柴油私家车1400cc或以下", "roadFuelType_HKId": 2 },
+    { "id": 6, "name": "柴油私家车1400cc至2000cc", "roadFuelType_HKId": 2 },
+    { "id": 7, "name": "柴油私家车2000cc或以上", "roadFuelType_HKId": 2 },
+    { "id": 8, "name": "汽油混合动力1400cc或以下", "roadFuelType_HKId": 3 },
+    { "id": 9, "name": "汽油混合动力1400cc至2000cc", "roadFuelType_HKId": 3 },
+    { "id": 10, "name": "汽油混合动力2000cc或以上", "roadFuelType_HKId": 3 },
+    { "id": 11, "name": "汽油轻型货车2.5至3.5吨", "roadFuelType_HKId": 4 },
+    { "id": 12, "name": "汽油轻型货车3.5至5.5吨", "roadFuelType_HKId": 4 },
+    { "id": 13, "name": "柴油轻型货车2.5至3.5吨", "roadFuelType_HKId": 5 },
+    { "id": 14, "name": "柴油轻型货车3.5至5.5吨", "roadFuelType_HKId": 5 },
+    { "id": 15, "name": "5.5吨或以上", "roadFuelType_HKId": 6 },
+    { "id": 16, "name": "5.5至7.5吨", "roadFuelType_HKId": 7 },
+    { "id": 17, "name": "7.5至16吨", "roadFuelType_HKId": 7 },
+    { "id": 18, "name": "16至32吨", "roadFuelType_HKId": 7 },
+    { "id": 19, "name": "32吨或以上", "roadFuelType_HKId": 7 }
+  ]
+}

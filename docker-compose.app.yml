@@ -1,0 +1,78 @@
+version: '2'
+
+services:
+  redis:
+    image: bitnami/redis
+    ports:
+      - "16379:6379"
+    environment:
+      - REDIS_PASSWORD=R_woyoadmin
+    volumes:
+      - redis:/bitnami/redis
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - 1025:1025
+      - 8025:8025
+
+  mongodb:
+    image: aashreys/mongo-auth:latest
+    environment:
+      # provide your credentials here
+      - AUTH=yes
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=further&further
+      - MONGODB_APPLICATION_DATABASE=htcloud
+      - MONGODB_APPLICATION_USER=surp
+      - MONGODB_APPLICATION_PASS=woyoadmin
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/configdb
+      - mongo:/data/db
+
+  htcloud:
+    image: code.ngcli.com:5000/htcloud:latest
+    ports:
+      - 3000:3000
+    environment:
+      - API_BASE_URL=http://120.79.149.88:3000
+      - STORAGE_PATH=/app/storage
+      - INITDB=false
+      - MIGRATEDB=false
+      - MONGODB_URL=mongodb://surp:woyoadmin@mongodb/htcloud
+      - SMTP_HOST=mailhog
+      - REDIS_URL=redis://:R_woyoadmin@redis
+      - REDIS_EXPIRE_DAYS=7
+    volumes:
+      - htcloud:/app/storage
+    command: ["pm2-docker", "start", "npm", "--", "start"]
+
+  hub:
+    image: code.ngcli.com:5000/htcloud:latest
+    ports:
+      - 6138:6138
+      - 50051:50051
+    environment:
+      - API_BASE_URL=http://120.79.149.88:3000
+      - STORAGE_PATH=/app/storage
+      - INITDB=false
+      - MIGRATEDB=false
+      - MONGODB_URL=mongodb://surp:woyoadmin@mongodb/htcloud
+      - SMTP_HOST=mailhog
+      - REDIS_URL=redis://:R_woyoadmin@redis
+      - REDIS_EXPIRE_DAYS=7
+      - GRPC_URL=hub:50051
+      - HTTP_URL=hub:6138/xml
+    volumes:
+      - htcloud:/app/storage
+    command: ["pm2-docker", "start", "npm", "--", "run", "dev:hub"]
+
+volumes:
+  mongo:
+    driver: local
+  htcloud:
+    driver: local
+  redis:
+    driver: local

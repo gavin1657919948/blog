@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": ".",
+    "module": "es2015",
+    "types": [],
+    "paths": {
+      "@shared": ["apps/alain/src/app/shared"],
+      "@shared/*": ["apps/alain/src/app/shared/*"],
+      "@alain/*": ["apps/alain/libs/*"]
+    }
+  },
+  "include": ["apps/alain", "packages/admin-lb-sdk", "modules/alain", "packages/alain-ui"],
+  "exclude": ["test.ts", "**/*.spec.ts", "**/*.e2e-spec.ts", "node_modules", "tmp"]
+}

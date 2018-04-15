@@ -1,0 +1,26 @@
+{
+  "RoadVehicleFuel_CN": [
+    {
+      "id": "first_RoadVehicleFuel_CN",
+      "timeStartValue": "2017-12-22T06:57:12.001Z",
+      "timeEndValue": "2017-12-22T06:57:12.001Z",
+      "timeUnit": "year",
+      "year": 2000,
+      "tripDistance": 100,
+      "fuelConsumption": 100,
+      "roadVehicle_CNId": "first_RoadVehicle_CN",
+      "emissionId": "first_emission"
+    },
+    {
+      "id": "second_RoadVehicleFuel_CN",
+      "timeStartValue": "2017-12-22T06:57:12.001Z",
+      "timeEndValue": "2017-12-22T06:57:12.001Z",
+      "timeUnit": "year",
+      "year": 2008,
+      "tripDistance": 1000,
+      "fuelConsumption": 1000,
+      "roadVehicle_CNId": "first_RoadVehicle_CN",
+      "emissionId": "second_emission"
+    }
+  ]
+}

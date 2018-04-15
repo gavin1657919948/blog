@@ -1,0 +1,4 @@
+<pro-header [title]="'探测器列表'"></pro-header>
+<nz-card [nzBordered]="false">
+  <ui-data-grid #grid (action)="action($event)" [service]="service" [config]="config"></ui-data-grid>
+</nz-card>

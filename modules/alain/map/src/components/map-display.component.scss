@@ -1,0 +1,9 @@
+.container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 94px);
+  abm-map {
+    flex: 1;
+  }
+}

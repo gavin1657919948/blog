@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+// web font icon
+@import '../../../node_modules/font-awesome/css/font-awesome.css';
+@import '../../../node_modules/simple-line-icons/css/simple-line-icons.css';
+@import '../../../node_modules/weather-icons/css/weather-icons.css';
+
+@import './styles/alain/app';
+@import './styles/index';
+
+// Third Library
+@import '../../../node_modules/ng2-dnd/style.css';
+
+.card {
+  margin-bottom: 0px;
+
+  formly-form .form-control-label.control-label {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .form-control {
+    display: block;
+    width: 50%;
+    height: 38px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #87bff7;
+    border-radius: 0.25rem;
+    margin: 5px 0px 15px;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:active {
+      border-color: #007bff;
+    }
+  }
+
+  .card-footer {
+    display: none;
+  }
+}

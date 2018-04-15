@@ -1,0 +1,86 @@
+<div class="content__title">
+  <h1>
+    数据展示面板
+    <small class="text-sm hidden-xs">欢迎 !</small>
+  </h1>
+</div>
+<div class="quick-menu" [class.show]="quickMenu" (click)="quickMenu=!quickMenu">
+  <div class="quick-menu-inner">
+    <div class="settings-ctrl">
+      <i class="anticon anticon-question-circle-o"></i>
+    </div>
+    <div class="list-group list-group-flush">
+      <a (click)="msg.info('item 1')" class="list-group-item">How do i create account?</a>
+      <a (click)="msg.info('item 2')" class="list-group-item">How do i create account?</a>
+      <a (click)="msg.info('item 3')" class="list-group-item">How do i create account?</a>
+      <a (click)="msg.info('item 4')" class="list-group-item">How do i create account?</a>
+      <a (click)="msg.info('item 5')" class="list-group-item">How do i create account?</a>
+    </div>
+  </div>
+</div>
+<div nz-row nzGutter="16">
+  <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-primary rounded-md">
+      <div nz-col nzSpan="12" class="p-md text-white">
+        <div class="h2 mt0">123,45</div>
+        <p class="text-nowrap">探测终端</p>
+      </div>
+      <div nz-col nzSpan="12">
+        <mini-bar height="35" color="#fff" borderWidth="3" [margin]="[36, 30, 30, 30]" [data]="webSite"></mini-bar>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-success rounded-md">
+      <div nz-col nzSpan="12" class="p-md text-white">
+        <div class="h2 mt0">234,567K</div>
+        <p class="text-nowrap">上送数据</p>
+      </div>
+      <div nz-col nzSpan="12">
+        <mini-bar height="35" color="#fff" borderWidth="3" [margin]="[36, 30, 30, 30]" [data]="webSite"></mini-bar>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-orange rounded-md">
+      <div nz-col nzSpan="12" class="p-md text-white">
+        <div class="h2 mt0">78</div>
+        <p class="text-nowrap">故障终端</p>
+      </div>
+      <div nz-col nzSpan="12">
+        <mini-bar height="35" color="#fff" borderWidth="3" [margin]="[36, 30, 30, 30]" [data]="webSite"></mini-bar>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-pink rounded-md">
+      <div nz-col nzSpan="12" class="p-md text-white">
+        <div class="h2 mt0">45</div>
+        <p class="text-nowrap">报警终端</p>
+      </div>
+      <div nz-col nzSpan="12">
+        <mini-bar height="35" color="#fff" borderWidth="3" [margin]="[36, 30, 30, 30]" [data]="webSite"></mini-bar>
+      </div>
+    </div>
+  </div>
+</div>
+<div nz-row nzGutter="16">
+  <div nz-col nzXs="24" nzMd="12">
+    <nz-card [nzBordered]="false">
+      <ng-template #title>
+        报警数量趋势
+        <small class="text-sm font-weight-normal">每月趋势变化图</small>
+      </ng-template>
+      <bar height="275" [data]="salesData"></bar>
+    </nz-card>
+  </div>
+  <div nz-col nzXs="24" nzMd="12">
+    <nz-card [nzTitle]="nzTitle" [nzBordered]="false">
+      <ng-template #nzTitle>
+        电压和电流监控
+        <small class="text-sm font-weight-normal">区域时间内电压电流监控显示</small>
+      </ng-template>
+      <timeline [data]="offlineChartData" [height]="239" [margin]="[0, 0, 0, 0]" [titleMap]="{ y1: '电压', y2: '电流' }"></timeline>
+    </nz-card>
+  </div>
+</div>
