@@ -9,129 +9,13 @@
   "url": "https://github.com/colmena/colmena",
   "colmena": {
     "module": {
-      "modelSources": [
-        "common/models",
-        "common/models/a1_1reckon",
-        "common/models/a1_1survey",
-        "common/models/a1_2reckon"
-      ],
+      "modelSources": ["common/models"],
       "models": {
         "KPI": {
           "dataSource": "db"
-        },
-        "FacilitySurvey_CN": {
-          "dataSource": "db"
-        },
-        "FacilitySurveyData_CN": {
-          "dataSource": "db"
-        },
-        "PollutantType_CN": {
-          "dataSource": "db"
-        },
-        "Facility_CN": {
-          "dataSource": "db"
-        },
-        "FacilityType_CN": {
-          "dataSource": "db"
-        },
-        "FuelDefine_CN": {
-          "dataSource": "db"
-        },
-        "FuelType_CN": {
-          "dataSource": "db"
-        },
-        "EfValue": {
-          "dataSource": "db",
-          "public": false
-        },
-        "IndustryEfvalue": {
-          "dataSource": "db"
-        },
-        "FacilityFuel_CN": {
-          "dataSource": "db"
-        },
-        "RoadVehicle_CN": {
-          "dataSource": "db"
-        },
-        "RoadVehicle_HK": {
-          "dataSource": "db"
-        },
-        "RoadVehicleFuel_CN": {
-          "dataSource": "db"
-        },
-        "RoadVehicleFuel_HK": {
-          "dataSource": "db"
-        },
-        "RoadFuelType_CN": {
-          "dataSource": "db"
-        },
-        "RoadFuelType_HK": {
-          "dataSource": "db"
-        },
-        "RoadSubgroup_HK": {
-          "dataSource": "db"
-        },
-        "RoadVehicleType_CN": {
-          "dataSource": "db"
-        },
-        "RoadVehicleType_HK": {
-          "dataSource": "db"
-        },
-        "RoadEmissionStandard_CN": {
-          "dataSource": "db"
-        },
-        "RoadEmissionStandard_HK": {
-          "dataSource": "db"
-        },
-        "NonRoadVehicle_CN": {
-          "dataSource": "db"
-        },
-        "NrVehicleType_CN": {
-          "dataSource": "db"
-        },
-        "NonRoadVehicleFuel_CN": {
-          "dataSource": "db"
-        },
-        "NrRatedPowerType_CN": {
-          "dataSource": "db"
-        },
-        "NrEmissionStandard_CN": {
-          "dataSource": "db"
-        },
-        "Emission": {
-          "dataSource": "db",
-          "public": false
-        },
-        "GasEmission": {
-          "dataSource": "db",
-          "public": false
         }
       },
-      "sampleData": [
-        "sample-data/sample-data.json",
-        "sample-data/sample-efValue.json",
-        "sample-data/sample-industryEfvalue.json",
-        "sample-data/sample-emission.json",
-        "sample-data/sample-gasEmission.json",
-        "sample-data/sample-pollutantType_CN.json",
-        "sample-data/sample-facilityType_CN.json",
-        "sample-data/sample-fuelDefine_CN.json",
-        "sample-data/sample-fuelType_CN.json",
-        "sample-data/sample-facility_CN.json",
-        "sample-data/sample-facilityFuel_CN.json",
-        "sample-data/sample-nrVehicleType_CN.json",
-        "sample-data/sample-nrRatedPowerType_CN.json",
-        "sample-data/sample-nrEmissionStandard_CN.json",
-        "sample-data/sample-roadVehicle_CN.json",
-        "sample-data/sample-roadVehicleFuel_CN.json",
-        "sample-data/sample-roadEmissionStandard_CN.json",
-        "sample-data/sample-roadEmissionStandard_HK.json",
-        "sample-data/sample-roadVehicleType_CN.json",
-        "sample-data/sample-roadVehicleType_HK.json",
-        "sample-data/sample-roadFuelType_CN.json",
-        "sample-data/sample-roadFuelType_HK.json",
-        "sample-data/sample-roadSubgroup_HK.json"
-      ]
+      "sampleData": ["sample-data/sample-data.json", "sample-data/sample-blogContent.json"]
     }
   }
 }

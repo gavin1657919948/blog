@@ -67,6 +67,11 @@
       "options": {
         "disableInclude": false
       }
+    },
+    "blogInfos": {
+      "type": "hasMany",
+      "model": "BlogInfo",
+      "foreignKey": ""
     }
   },
   "acls": [

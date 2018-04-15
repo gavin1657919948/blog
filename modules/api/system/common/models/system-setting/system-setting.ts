@@ -8,7 +8,7 @@ module.exports = function(SystemSetting) {
           ctx.data.value = Boolean(String(ctx.data.value) === 'true')
           break
         case 'integer':
-          ctx.data.value = parseInt(ctx.data.value)
+          ctx.data.value = parseInt(ctx.data.value, 10)
           break
       }
     }

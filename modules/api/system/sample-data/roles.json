@@ -13,17 +13,8 @@
       "name": "system-user"
     },
     {
-      "id": "manager",
-      "name": "manager"
-    },
-
-    {
-      "id": "staff",
-      "name": "staff"
-    },
-    {
-      "id": "maintainer",
-      "name": "maintainer"
+      "id": "user",
+      "name": "user"
     }
   ]
 }

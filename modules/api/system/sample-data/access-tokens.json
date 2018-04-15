@@ -5,10 +5,6 @@
       "userId": "admin"
     },
     {
-      "id": "manager-token",
-      "userId": "manager"
-    },
-    {
       "id": "user-token",
       "userId": "user"
     }
