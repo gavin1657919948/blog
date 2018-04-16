@@ -6,7 +6,12 @@
       "firstName": "高",
       "lastName": "炜",
       "avatar": "https://avatars0.githubusercontent.com/u/39034?s=400&v=4",
-      "password": "123"
+      "password": "123",
+      "gender": "男",
+      "job": "程序猿",
+      "birthday": "2000-01-01T17:30:08",
+      "homeTown": "黄冈",
+      "selfIntr": "心里有B树"
     },
     {
       "id": "admin",
@@ -14,7 +19,12 @@
       "firstName": "王",
       "lastName": "广俊",
       "avatar": "https://avatars0.githubusercontent.com/u/13700?s=400&v=4",
-      "password": "123"
+      "password": "123",
+      "gender": "男",
+      "job": "老板",
+      "birthday": "2000-01-01T17:30:08",
+      "homeTown": "xx",
+      "selfIntr": "隔壁老王就是我，我就是隔壁老王"
     }
   ]
 }

@@ -56,6 +56,21 @@
     },
     "avatar": {
       "type": "String"
+    },
+    "gender": {
+      "type": "String"
+    },
+    "job": {
+      "type": "String"
+    },
+    "birthday": {
+      "type": "Date"
+    },
+    "homeTown": {
+      "type": "String"
+    },
+    "selfIntr": {
+      "type": "String"
     }
   },
   "validations": [],

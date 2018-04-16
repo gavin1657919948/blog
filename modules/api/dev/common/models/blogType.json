@@ -1,9 +1,9 @@
 {
-  "name": "BlogInfo",
-  "plural": "BlogInfos",
-  "description": "Blog Info data",
+  "name": "BlogType",
+  "plural": "BlogTypes",
+  "description": "Blog Type data",
   "base": "PersistedModel",
-  "componentPackage": "@wushuu/module-api-dev/common/models/blogInfo/",
+  "componentPackage": "@wushuu/module-api-dev/common/models/blogType/",
   "idInjection": true,
   "forceId": false,
   "mixins": {
@@ -22,26 +22,16 @@
       "required": true,
       "defaultFn": "uuidv4"
     },
-    "title": {
+    "name": {
       "type": "String"
-    },
-    "abstract": {
-      "type": "String"
-    },
-    "viewCount": {
-      "type": "number"
     }
   },
   "validations": [],
   "relations": {
     "systemUser": {
-      "type": "belongsTo",
+      "type": "hasMany",
       "model": "SystemUser",
       "foreignKey": ""
-    },
-    "blogContent": {
-      "type": "belongsTo",
-      "model": "BlogContent"
     }
   },
   "acls": []
